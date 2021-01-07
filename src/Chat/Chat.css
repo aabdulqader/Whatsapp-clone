@@ -1,0 +1,119 @@
+.chat {
+  flex: 0.75;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ededed;
+  padding: 0.5rem 1rem;
+}
+.chat__headerLeft {
+  display: flex;
+  align-items: center;
+}
+.chat__headerRight {
+  display: flex;
+  align-items: center;
+}
+.chatuser {
+  margin-left: 1rem;
+}
+
+/* Chat Body Style */
+
+.chat__body {
+  flex: 1;
+  background-image: url("../wallpaper.jpg");
+  background-repeat: repeat;
+  background-position: center;
+  overflow: auto;
+  padding: 2rem 1rem 1rem 1rem;
+}
+
+.chat__message {
+  position: relative;
+  font-size: 16px;
+  padding: 25px 20px 22px 10px;
+  background-color: #ffffff;
+  width: fit-content;
+  min-width: 200px;
+  border-bottom-right-radius: 0.7rem;
+  border-bottom-left-radius: 0.7rem;
+  border-top-right-radius: 0.7rem;
+  margin-bottom: 0.8rem;
+  max-width: 430px;
+}
+
+.chat__name {
+  position: absolute;
+  top: 4.5px;
+  left: 0;
+  font-weight: bold;
+  font-size: 14px;
+  padding-left: 0.6rem;
+}
+.chat__timestamp {
+  position: absolute;
+  bottom: 4px;
+  right: 10px;
+  font-size: 11.5px;
+  color: gray;
+}
+
+.chat__receiver {
+  margin-left: auto;
+  background-color: #c6f1a5;
+  padding: 25px 10px 22px 10px;
+  border-bottom-right-radius: 0.7rem;
+  border-bottom-left-radius: 0.7rem;
+  border-top-left-radius: 0.7rem;
+  border-top-right-radius: 0;
+  max-width: 430px;
+  width: fit-content;
+}
+
+/* Chat footer */
+
+.chat__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 65px;
+  border-top: 1px solid lightgray;
+  padding: 0 1rem;
+  background-color: #ededed;
+}
+
+.chat__footer > form {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 0.3rem 1rem;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+.chat__footer > form > input {
+  width: 100%;
+  padding: 0.5rem 0.3rem;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+.chat__footer > form > input::placeholder {
+  font-size: 16px;
+  color: rgb(175, 175, 175);
+}
+.chat__footer > form > button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
